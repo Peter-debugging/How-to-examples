@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+<body>
+    <h1>Click on this icon</h1>
+    <div class="container" onclick="func(this)">
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+    </div>
+    <script>
+        function func(element){
+            element.classList.toggle("change");
+        }
+    </script>
+</body>
+</html>

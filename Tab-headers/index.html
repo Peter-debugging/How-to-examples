@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+
+    <header id="London" class="red">
+      <h1>London</h1>
+      <p>London is the capital city of England</p>
+    </header>
+
+    <header id="Paris" class="green">
+      <h1>Paris</h1>
+      <p>Paris is the capital city of Paris</p>
+    </header>
+
+    <header id="Tokyo" class="blue">
+      <h1>Tokyo</h1>
+      <p>Tokyo is the capital city of Japan</p>
+    </header>
+
+    <header id="Oslo" class="orange">
+      <h1>Oslo</h1>
+      <p>Oslo is the capital city of Norway</p>
+    </header>
+
+    <button id="default" onclick="change(this, 'London')">London</button>
+    <button onclick="change(this, 'Paris')">Paris</button>
+    <button onclick="change(this, 'Tokyo')">Tokyo</button>
+    <button onclick="change(this, 'Oslo')">Oslo</button>
+  
+
+  <script>
+    document.getElementById("default").click();
+
+    function change(element, city){
+      var headers = document.getElementsByTagName("header");
+      var buttons = document.getElementsByTagName("button");
+      for(var i = 0; i < headers.length; i++){
+        headers[i].className = headers[i].className.replace(" active","");        
+      }
+      for(var i in buttons){
+        buttons[i].className = buttons[i].className = "default";
+      }
+      element.className =  document.getElementById(city).className.replace(" active","");
+      document.getElementById(city).className += " active";
+    }
+  </script>
+  </body>
+</html>

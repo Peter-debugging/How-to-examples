@@ -1,0 +1,22 @@
+.container{
+    cursor:pointer;
+}
+
+.container div{
+    margin:5px;
+    width:30px;
+    height:5px;
+    background-color:#444;
+    transition:0.4s;    
+}
+
+.change .bar-1{
+    transform:rotate(-45deg) translate(-8px, 8px)
+}
+.change .bar-2{
+    opacity: 0%;
+}
+
+.change .bar-3{
+    transform:rotate(45deg) translate(-4px, -10px)
+}

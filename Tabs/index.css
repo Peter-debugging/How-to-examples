@@ -1,0 +1,32 @@
+main{
+  border:solid 1px #ccc;
+}
+header{
+  width:100%;
+  overflow: hidden;
+  background-color:rgb(228, 228, 228);
+}
+.tabs{
+  background-color:inherit;
+  margin:0;
+  border:none;
+  padding:15px 20px;
+  outline:none;
+  float: left ;
+  transition:0.3s background-color;
+}
+.tabs:hover, .active{
+  background-color:#ccc;
+}
+article{
+  min-height:100px;
+}
+.tab-content{
+  display:none;
+  padding: 0 15px;
+  animation:fade 1s;
+}
+@keyframes fade{
+  0%{opacity:0%}
+  100%{opacity:100%}
+}

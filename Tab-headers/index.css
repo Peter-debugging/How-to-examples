@@ -1,0 +1,26 @@
+body{margin:0; font-family:Arial}
+header{
+  padding:60px;
+  text-align:center;
+  display:none;
+}
+.active{
+  display:block;
+}
+button{
+  width:25%;
+  margin:0;
+  border:0;
+  float:left;
+  padding:20px 0;
+  outline:none;
+  cursor:pointer;
+}
+button.default:hover{
+  background-color:#ccc;
+}
+.red{background-color:red}
+.green{background-color:green}
+.blue{background-color:rgb(0, 153, 255)}
+.orange{background-color:rgb(255, 115, 0)}
+.red, .green, .blue, .orange{color:white; }

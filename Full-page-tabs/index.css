@@ -1,0 +1,42 @@
+body{margin:0; font-family:Arial}
+body, html{
+  height:100%;
+}
+nav{
+  display:flex;
+}
+button{
+  float:left;
+  border:0;
+  color:white; 
+  background-color:rgb(77, 76, 76);
+  width:25%;
+  padding:15px;
+  cursor:pointer;
+  outline:none;
+}
+button.default:hover{
+  background-color:rgb(88, 88, 88);
+}
+
+article{
+  color:white;
+  padding:30px 15px;
+  display:none;
+  height:100%;
+}
+article.active{
+  display:block;
+}
+.red{
+  background-color:red;
+}
+.green{
+  background-color:green;
+}
+.blue{
+  background-color:blue;
+}
+.orange{
+  background-color:orange;
+}

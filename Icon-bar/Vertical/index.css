@@ -1,0 +1,29 @@
+/*layout*/
+body, ul, li{
+    margin:0;
+    padding:0;
+}
+li{
+    display:block; 
+    padding:15pt 15pt;
+    width:30px;
+}
+a{
+    color:white;
+}
+
+/*colors*/
+.background-darkgray{
+    background-color:rgb(104, 104, 104);
+}
+li.background-darkgray:hover{
+    background-color:rgb(65, 65, 65);
+}
+.background-green{
+    background-color:rgb(83, 185, 73);
+}
+
+/*fonts*/
+li{
+    font-size:20pt;
+}

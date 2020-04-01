@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+    <nav>
+      <button class="default" onclick="change(this, 'home')">Home</button>
+      <button class="default" onclick="change(this, 'news')">News</button>
+      <button class="default" onclick="change(this, 'contact')">Contact</button>
+      <button class="default" onclick="change(this, 'about')">About</button>
+    </nav>    
+
+    <article class="page red active" id="home">
+      <h1>Home</h1>
+      <p>Home is where the heart is..</p>
+    </article>
+
+    <article class="page green" id="news">
+      <h1>News</h1>
+      <p>Some news this fine day!</p>
+    </article>
+
+    <article class="page blue" id="contact">
+      <h1>Contact</h1>
+      <p>Get in touch, or swing by for a cup of coffee</p>
+    </article>
+
+    <article class="page orange" id="about">
+      <h1>About</h1>
+      <p>Who we are and what we do</p>
+    </article>
+
+    <script>
+      var buttons = document.getElementsByTagName("button");
+      var pages = document.getElementsByClassName("page");
+
+      function change(elem, pageName){
+        
+        for(var i = 0; i < pages.length; i++)
+          pages[i].className = pages[i].className.replace(" active", "");
+        
+        var activePage = document.getElementById(pageName);
+        activePage.className += " active";
+
+        for(var i = 0; i < pages.length; i++)
+          buttons[i].className = "default";
+        elem.className = activePage.className.replace("page ", "").replace(" active", "");
+      }
+    </script>
+
+  </body>
+</html>

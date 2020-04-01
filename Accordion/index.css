@@ -1,0 +1,26 @@
+section{
+    width:50%;  
+    margin:auto;
+}
+.accordion{
+    border:none;
+    background-color: rgb(223, 223, 223);
+    width:100%;
+    text-align:left;
+    padding:15px;
+    outline:none;
+    color:#444;
+    cursor:pointer; 
+}
+.accordion i {
+    float:right;    
+}
+.active, .accordion:hover{
+    background-color:#ccc;
+}
+.panel{
+    max-height: 0;  
+    overflow: hidden;
+    padding:0 15px; 
+    transition: 0.3s max-height ease-out;
+}

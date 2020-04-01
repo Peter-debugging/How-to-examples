@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body> 
+  <main>
+    <header>
+    <button id="default" onclick="change(event, 'London')" class="tabs active">
+      London
+    </button>
+    
+    <button onclick="change(event, 'Paris')" class="tabs">
+      Paris
+    </button>
+
+    <button onclick="change(event, 'Tokyo')" class="tabs">
+      Tokyo
+    </button>
+    </header>
+
+    <article>
+    <div id='London' class="tab-content">
+      <h3>London</h3>
+      <p>London is the capital of England.</p>
+    </div>
+
+    <div id='Paris'  class="tab-content">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id='Tokyo' class="tab-content">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+    </article>
+  </main>
+  <script>
+    var tabs = document.getElementsByClassName('tabs');
+    var contentList = document.getElementsByClassName('tab-content');
+
+    document.getElementById("default").click();
+
+    var header = document.getElementsByTagName("header")[0];
+
+    
+    
+    function change(event, city){
+        for(var i = 0; i < tabs.length; i++){
+          tabs[i].className = tabs[i].className.replace("active", "");
+        }
+        event.currentTarget.className += " active";
+
+        for(var i = 0; i < contentList.length; i++){
+          contentList[i].style.display = "none";
+        }
+        document.getElementById(city).style.display = "inline-block";
+      };
+  </script>
+  </body>
+</html>
