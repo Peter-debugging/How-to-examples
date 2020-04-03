@@ -1,0 +1,39 @@
+main{ 
+  display:flex;
+  font-family: Arial;
+
+}
+nav{
+  margin-left: -110px;
+  width: 150px;
+  z-index:1;
+}
+a{
+  display:block;
+  color:white;
+  text-decoration: none;
+  padding:15px 30px;
+  width:90px;
+  margin:8px 0px;
+  border-radius: 5px;
+  outline:none;
+  transition:0.4s margin-left;
+}
+a:hover{
+  margin-left: 80px;
+}
+.green{
+  background-color:rgb(96, 206, 96);
+}
+.blue{
+  background-color:rgb(6, 114, 255);
+}
+.red{
+  background-color:rgb(255, 4, 4);
+}
+.gray{
+  background-color:gray;
+}
+section{
+  padding:0px 10px;
+}

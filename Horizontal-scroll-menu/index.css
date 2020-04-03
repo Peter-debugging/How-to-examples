@@ -1,0 +1,28 @@
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif
+
+}
+nav{
+  background-color:rgb(17, 17, 17);
+  overflow-x:scroll;
+  overflow-y:hidden;
+  height:60px;
+  width:100%;
+  display:flex;
+}
+a{
+  color:white;
+  padding:15px;
+  float:left;
+  text-decoration: none;
+}
+a:hover{
+  color:black;
+  background-color:rgb(196, 196, 196);  
+}
+@media screen and (max-width:768px){
+  nav{
+    height:5  0px;
+  }
+}

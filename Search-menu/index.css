@@ -1,0 +1,33 @@
+body{
+  margin:0;
+  font-family:Arial
+}
+main{
+  display:flex;
+}
+nav{
+  background-color:rgb(180, 180, 180);
+  width:20%;
+}
+nav a{
+  display:block;
+}
+section{
+  background-color:lightgray;
+  width:80%;
+}
+h1, p{
+  margin:10px;
+}
+a{
+  color:black;
+  text-decoration:none;
+  padding:18px;
+}
+input[type=text]{
+  width:100%;
+  padding:10px
+}
+a:hover{
+  background-color:rgb(228, 228, 228);
+}

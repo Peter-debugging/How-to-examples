@@ -1,0 +1,42 @@
+*{box-sizing:border-box;}
+main{
+  border:solid 1px #ccc;
+  min-height: 400px;
+}
+header{
+  float:left;
+  display:inline-block;
+  width:30%;
+  overflow: hidden;
+  background-color:rgb(228, 228, 228);
+  height:400px;
+}
+.tabs{
+  background-color:inherit;
+  margin:0;
+  border:none;
+  padding:15px 20px;
+  outline:none;
+  transition:0.3s background-color;
+  display:block;
+  width:100%;
+  text-align:left;
+}
+.tabs:hover, .active{
+  background-color:#ccc;
+}
+article{
+  min-height:100px;
+  width:90%;
+  padding:15px;
+}
+.tab-content{
+  display:none;
+  animation:fade 1s;
+  padding-left:15px;
+  
+}
+@keyframes fade{
+  0%{opacity:0%}
+  100%{opacity:100%}
+}

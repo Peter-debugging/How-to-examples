@@ -1,0 +1,17 @@
+body{
+  margin:0;
+  font-family:Arial;
+}
+nav{
+  background-color:rgb(235, 235, 235);
+  overflow:hidden;
+}
+a{
+  color:black;
+  float:left;
+  text-decoration:none;
+  padding:15px; 
+}
+a:hover, .active{
+  border-bottom:3px solid red;
+}

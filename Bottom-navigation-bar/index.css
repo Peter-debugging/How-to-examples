@@ -1,0 +1,25 @@
+body{
+  font-family:Arial;
+  margin:0;
+}
+nav{
+  background-color:rgb(39, 39, 39);
+  position:fixed;
+  width:100%;
+  bottom:0;
+}
+a{
+  outline:none;
+  color:white;
+  text-decoration: none;
+  padding:15px;
+  float:left;
+}
+a:hover{
+  background-color:rgb(168, 168, 168);
+  color:black;
+}
+.active, .active:hover{
+  color:white;
+  background-color:rgb(65, 65, 216);
+}

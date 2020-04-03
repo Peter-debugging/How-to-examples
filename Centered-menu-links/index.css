@@ -1,0 +1,34 @@
+body{
+  margin:0;
+  font-family:Arial
+}
+nav{
+  background-color:rgb(36, 36, 36);
+  overflow:hidden;
+  width:100%;
+  text-align:center;
+}
+a{
+  color:white;
+  text-decoration:none;
+  padding:15px; 
+  float:left;
+}
+a:hover{
+  background-color: rgb(209, 209, 209);
+  color:black;
+}
+.right{
+  float:right;
+}
+
+#centered{
+  float:none;
+  position:relative;
+  top:15px; 
+  padding:16px; 
+}
+.active, .active:hover{
+  background-color:rgb(115, 255, 115);
+  color:white;
+}

@@ -1,0 +1,28 @@
+body{
+  font-family:Arial;
+  margin:0;
+}
+main{
+  display:flex;
+}
+nav{
+  min-width:100px;
+  background-color:rgb(43, 43, 43);
+}
+nav div{
+  padding:15px;
+  position:fixed;
+}
+h1, p{
+  padding:0px 20px;
+  
+}
+a{
+  color:rgb(126, 126, 126);
+  text-decoration:none;
+  display:block;
+  padding:5px;
+}
+a:hover{
+  color:rgb(240, 240, 240);
+}

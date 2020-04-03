@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/f6aab74ee7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  </head>
+  <body>
+    <div class="nav">
+      <span onclick="change()" class="icon"><i class="fas fa-bars"></i></span>
+
+      <a class="active" href="">Home</a>
+      <a href="">News</a>
+      <a href="">Contact</a>
+      <a href="">About</a>
+      
+    </div>
+    <script>
+      function change(){
+        var nav = document.getElementsByClassName("nav")[0];
+        nav.classList.toggle("open");
+
+        document.getElementsByClassName("active")[0].classList.toggle("full-width");
+      }
+    </script>
+  </body>
+</html>

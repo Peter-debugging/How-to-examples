@@ -1,0 +1,28 @@
+body{
+  margin:0;
+}
+main{
+  display:flex;
+  font-family:Arial, sans-serif;
+}
+nav{
+  padding:15px;
+  width:15%;
+  background-color:rgb(27, 27, 27);
+}
+section{
+  padding:15px;
+  min-height:700px;
+}
+a{
+  text-decoration:none;
+  display:block;
+  padding:10px;
+  color:rgb(129, 129, 129);
+}
+a:hover{
+  color:rgb(243, 243, 243);
+}
+a i{
+  margin-right:7px;
+}

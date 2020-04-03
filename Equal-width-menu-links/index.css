@@ -1,0 +1,24 @@
+body{
+  margin:0;
+  font-family:Arial;
+}
+nav{
+  background-color:rgb(66, 66, 66);
+  overflow:hidden;
+  width:100%;
+  display: flex;
+}
+a{
+  padding:15px;
+  color:white;
+  text-decoration: none;
+  outline:none;
+  width:25%;
+  text-align:center;
+}
+a:hover{
+  background-color:rgb(17, 17, 17);
+}
+.active, .active:hover{
+  background-color:rgb(91, 255, 91);
+}

@@ -1,0 +1,29 @@
+body{
+  margin:0px;
+  font-family:Arial;
+}
+.sidenav{
+  width:0;
+  background-color:#131313;
+  height:100%;
+  position:fixed;
+  font-size:20pt;
+  overflow-x: hidden;
+  transition:0.22s;
+}
+
+.sidenav a{
+  text-decoration:none;
+  color:gray;
+  display:block;
+  padding:8px 8px 8px 32px; 
+  outline:none;
+}
+
+.sidenav a:hover{
+  color:white;
+}
+
+.closebtn{
+  text-align:right;
+}
