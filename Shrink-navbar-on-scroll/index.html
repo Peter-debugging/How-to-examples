@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+    <header>
+      <h1  id="company-logo">
+        CompanyLogo
+      </h1>
+      <nav>
+        <a href="" class="active">Home</a>
+        <a href="">Contact</a>
+        <a href="">About</a>
+      </nav>
+    </header>
+    <main>
+      <h1>
+        This example demonstrates how to shrink a navigation bar when the 
+        user starts to scroll the page.
+      </h1>
+      <p>
+        Scroll down this frame to see the effect!
+      </p>
+      <p>
+        Scroll to the top to remove the effect.
+      </p>
+      <p>
+        Some text some text some text...
+      </p>
+      <p>
+        Some text some text some text...
+      </p>
+      <p>
+        Some text some text some text...
+      </p>
+      <p>
+        Some text some text some text...
+      </p>
+      <p>
+        Some text some text some text...
+      </p>
+      <p>
+        Some text some text some text...
+      </p>
+    </main>
+    <script>
+      var companyLogo =  document.querySelector("header h1");
+      var header = document.querySelector("header");
+      
+
+      window.onscroll = changeHeader;
+      
+      function changeHeader(){
+        if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+          companyLogo.style.fontSize = "15pt";
+          header.style.padding = "10px 15px";
+        }else{
+          companyLogo.style.fontSize = "30pt";
+          header.style.padding = "70px 15px";
+        }
+      }
+        companyLogo.style.transition = "0.5s font-size";
+        header.style.transition = "0.5s padding";
+    </script>
+  </body>
+</html>

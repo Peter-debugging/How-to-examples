@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+    <nav>
+      <a href="">Home</a>
+      <a href="">News</a>
+      <a href="">Contact</a>
+    </nav>
+    <main>
+      <h1>This page demonstrates how to slide down
+         a navbar when the user starts to scroll the page</h1>
+      <p>Scroll down this frame to see the effect!</p>
+      <p>Scroll to the top to hide the navbar</p>
+
+      <p>Some text Some text Some text Some text Some text Some text
+        Some text Some text Some text Some text Some text Some text
+        Some text Some text Some text  Some text Some text Some text
+      </p>
+      <p>Some text Some text Some text Some text Some text Some text
+        Some text Some text Some text Some text Some text Some text
+        Some text Some text Some text  Some text Some text Some text
+      </p>
+    </main>
+  <script>
+    window.onscroll = ()=>{
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        document.getElementsByTagName("nav")[0].style.top = "0px";
+      }else{
+        document.getElementsByTagName("nav")[0].style.top = "-50px";
+      }
+    }
+  </script>
+  </body>
+</html>

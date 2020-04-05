@@ -1,0 +1,39 @@
+body{
+  margin:0;
+  font-family:Arial;
+  font-size:25px;
+}
+header{
+  padding:50px;
+  background-color:rgb(228, 228, 228);
+  text-align:center;
+}
+nav{
+  font-size:18px;
+  background-color:rgb(26, 26, 26);
+  overflow:hidden;
+}
+a{
+  outline:none;
+  padding:15px;
+  float:left;
+  color:white;
+  text-decoration:none;
+}
+a:hover{
+  background-color:rgb(206, 206, 206);
+  color:black;
+}
+.active, .active:hover{
+  color:white;
+  background-color:rgb(90, 202, 90);
+}
+main{
+  padding:15px;
+  min-height:1000px;
+}
+.sticky{
+  position:fixed;
+  width:100%;
+  top:0px;
+}

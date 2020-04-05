@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button 
+        class="dropdown-button" 
+        onclick="show(this.nextElementSibling)">
+      Click me
+    </button>
+      <div class="dropdown-content">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button 
+        class="dropdown-button" 
+        onclick="show(this.nextElementSibling)">
+      Click me
+    </button>
+      <div class="dropdown-content">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+      </div>
+    </div>
+    <script>
+      function show(dropdownContent){
+        var shownDropdownContent = document.querySelector(".shown");
+        dropdownContent.classList.toggle("shown");
+      }
+    </script>
+  </body>
+</html>

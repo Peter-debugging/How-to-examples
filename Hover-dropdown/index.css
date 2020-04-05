@@ -1,0 +1,30 @@
+.dropbtn{
+  border:none;
+  outline:none;
+  padding:15px;
+  font-size:15px;
+  cursor:pointer;
+  background-color:rgb(0, 183, 255);
+  color:white;
+}
+.dropdown{
+  display:inline;
+}
+.dropdown-content{
+  position:absolute;
+  display:none;
+  box-shadow:0px 8px 8px 4px rgba(0,0,0,0.2);
+  width:150px;
+}
+.dropdown-content a{
+  display:block;
+  padding:15px;
+  color:black;
+  text-decoration: none;
+}
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+.dropdown-content a:hover{
+  background-color:rgb(235, 235, 235);
+}

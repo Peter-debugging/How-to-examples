@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/f6aab74ee7.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+    <nav>
+      <i  id="menu-icon" class="fas fa-bars"></i>
+      <a href="" class="active min-content">Home</a>
+      <a href="">News</a>
+      <a href="">Contact</a>
+      <div class="dropdown">
+        <button class="dropdown-button">Dropdown <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="">Link 1</a>
+          <a href="">Link 2</a>
+          <a href="">Link 3</a>
+        </div>
+      </div>
+      <a href="">About</a>
+    </nav>
+    <script>
+      var menuIcon = document.getElementById("menu-icon");
+      menuIcon.addEventListener("click",()=>{
+        document.querySelector("nav").classList.toggle("shown");
+        document.querySelector(".active").classList.toggle("min-content");
+      });
+    </script>
+  </body>
+</html>

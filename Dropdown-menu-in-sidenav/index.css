@@ -1,0 +1,45 @@
+body{
+  margin:0;
+  font-family:Arial;
+}
+main{
+  display:flex;
+}
+nav{
+  background-color:rgb(24, 24, 24);
+  padding-top:15px;
+}
+a, .dropdown-button{
+  width:200px;
+  margin:0px;
+  padding:5px 20px 5px 20px;
+  display:block; 
+  border:0;
+  font-size:20px;
+  background-color:inherit;
+  color:rgb(161, 161, 161);
+  text-decoration:none;
+  cursor:pointer;
+  text-align:left;
+  outline:none;
+}
+a:hover, .dropdown-button:hover{
+  color:white;
+}
+.dropdown-button i{
+  margin-left:30px;
+}
+.dropdown-content{
+  display:none;
+}
+.dropdown-content a{
+  background-color:rgb(58, 58, 58);
+  padding:5px 15px 5px 25px;
+}
+.shown{
+  display:block;
+}
+section{
+  padding: 10px 30px;
+  min-height:700px;
+}

@@ -1,0 +1,23 @@
+.dropdown-button{
+  border:none;
+  padding:15px;
+  font-size:15px;
+  background-color:rgb(219, 48, 48);
+  color:white;
+  outline:none;
+  cursor:pointer;
+  
+}
+.dropdown-button:hover{
+  background-color:rgb(146, 0, 0);
+}
+.dropdown-content{
+  display:none;
+  position: absolute;
+}
+.shown{
+  display:block;
+}
+.dropdown{
+  float: left;  
+}

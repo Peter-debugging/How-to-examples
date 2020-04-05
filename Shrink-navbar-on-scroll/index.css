@@ -1,0 +1,50 @@
+body{
+  margin:0;
+  font-family:Arial;
+}
+header{
+  background-color:rgb(223, 223, 223);
+  padding: 70px 15px;
+  overflow: hidden;
+  width:100%;
+  position:fixed;
+  top:0;  
+}
+header h1{
+  padding:10px;
+  border-radius:5px;
+  transition:0.5s background-color;
+  font-size:30pt;
+  float: left;
+  margin:0;
+  cursor:pointer;
+}
+nav{
+  float:right;
+  display:inline;
+  margin-right:30px;
+}
+a{
+  padding:15px;
+  outline:none;
+  float:left;
+  color:black;
+  text-decoration:none;
+  border-radius:5px;
+  transition:0.5s background-color;
+}
+a:hover, header h1:hover{
+  background-color:rgb(204, 204, 204);
+}
+.active, .active:hover{
+  background-color:rgb(0, 174, 255);
+  color:white;
+}
+main{
+  min-height:1000px;
+  padding:15px;
+  margin-top:170px;
+}
+main h1, main  p{
+  font-size:25pt;
+}

@@ -1,0 +1,27 @@
+body{
+  margin:0;
+  font-family:Arial;
+}
+nav{
+  background-color:rgb(32, 32, 32);
+  overflow: hidden;
+  width:100%;
+  position:fixed;
+  margin:0;
+  top:0;
+}
+a{
+  text-decoration:none;
+  color:white;
+  float:left;
+  padding:15px;
+}
+a:hover{
+  background-color:rgb(214, 214, 214);
+  color:black;
+}
+main{
+  padding:15px;
+  margin: 15px auto auto auto;
+  width:70%;  
+}

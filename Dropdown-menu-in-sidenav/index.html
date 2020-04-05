@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/f6aab74ee7.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Clients</a>  
+        <a href="">Contact</a>
+        <div  class="dropdown">
+          <button 
+            onclick="toggle(this.nextElementSibling)" 
+            class="dropdown-button">
+              Dropdown <i class="fas fa-caret-down">
+            </i></button>
+          <div class="dropdown-content">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+          </div>
+        </div>
+        <a href="">Search</a>
+      </nav>
+      <section>
+        <h1>Sidebar Dropdown</h1>
+        <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
+        <p>This sidebar is of full height (100%) and always shown.</p>
+        <p>Some random text..</p>
+      </section>
+    </main>
+    <script>
+      function toggle(element){
+        element.classList.toggle("shown");
+      }
+    </script>
+  </body>
+</html>

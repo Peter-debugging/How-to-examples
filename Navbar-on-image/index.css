@@ -1,0 +1,26 @@
+body{
+  margin:0;
+  font-family:Arial;
+}
+header{
+  background:url(img.jpg);
+  background-position: 50% 50%;
+  height:500px;
+}
+nav{
+  overflow:hidden;
+  position: relative;
+  top:5%;
+  left:5%;
+}
+a{
+  background-color:rgb(46, 46, 46);
+  color:white;
+  text-decoration:none;
+  padding:15px;
+  float:left;
+}
+a:hover{
+  background-color:rgb(196, 196, 196);
+  color:black;
+}

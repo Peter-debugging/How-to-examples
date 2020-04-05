@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+      <header>
+        <h2>
+          Scroll Down
+        </h2>
+        <p>
+          Scroll down to see the sticky effect.
+        </p>       
+      </header>
+      <nav>
+        <a href="" class="active">Home</a>
+        <a href="">News</a>
+        <a href="">Contact</a>
+      </nav>
+      <main>
+        <h3>Sticky Navigation Example</h3>
+        <p>The navbar will stick to the top when you reach its scroll position</p>
+        <p>Some text some text some text some text
+          some text some text some text some text
+          some text some text some text some text
+          some text some text some text some text
+          some text some text some text some text
+        </p>
+      </main>
+      <script>
+        var nav = document.querySelector("nav");
+        var stickyOffset = nav.offsetTop;
+        window.onscroll = ()=>{
+          if( stickyOffset <= window.pageYOffset){
+            nav.className = "sticky";
+          }else{
+            nav.className = "";
+          }
+          
+        };
+      </script>
+  </body>
+</html>
