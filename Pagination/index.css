@@ -1,0 +1,20 @@
+nav{
+  background-color:white;
+  overflow: hidden;
+}
+button{
+  font-size:15px;
+  font:Arial;
+  float:left;
+  background-color:inherit;
+  border:none;
+  padding:7.5px 14px;
+  transition:background-color 0.5s;
+}
+button:hover{
+  background-color:rgb(219, 219, 219);
+}
+.active, .active:hover{
+  background-color:rgb(0, 132, 255);
+  color:rgb(255, 255, 255);
+}

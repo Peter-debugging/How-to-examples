@@ -1,0 +1,35 @@
+*{
+  font-family:Arial;
+}
+.dropup{
+  position: relative;
+}
+.dropup button{
+  font-size:15px;
+  padding:15px;
+  color:white;
+  background-color:rgb(0, 153, 255);
+  float:left;
+  border:none;
+}
+
+.dropup:hover .dropup-content{
+  display:block;
+}
+.dropup-content{
+  display:none;
+  position: absolute;
+  box-shadow:0px 0px 8px gray;
+  width:150px;
+  bottom:0px;
+}
+.dropup-content a{
+  display:block;
+  color:black;
+  text-decoration:none;
+  background-color:white;
+  padding:15px;
+}
+.dropup-content a:hover{
+  background-color:rgb(233, 233, 233);
+}

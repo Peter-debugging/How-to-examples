@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <script src="https://kit.fontawesome.com/f6aab74ee7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <i onclick="toggle()" class="fas fa-bars"></i>
+      <a href="" class="logo">Logo</a>
+      <a href="" class="links">News</a>
+      <a href="" class="links">Contact</a>
+      <a href="" class="links">About</a>
+    </nav>
+    <main>
+      <h4>Horizontal Mobile Navbar</h4>
+      <p>This example demonstrates how a navigation 
+        menu on a mobile/smart phone could look like.</p>
+      <p>Click on the hamburger menu (three bars) in the 
+        top right corner, to toggle the menu.</p>
+      
+    </main>
+    <script>
+      function toggle(){
+        var links = document.querySelectorAll(".links");
+        for(var i = 0; i < links.length; i++){
+          links[i].classList.toggle("shown");
+        }
+      }
+    </script>
+  </body>
+</html>

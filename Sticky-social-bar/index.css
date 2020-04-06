@@ -1,0 +1,41 @@
+body{
+  margin:0;
+  font-family:Arial;
+}
+
+main{
+  width:70%;
+  margin:auto;
+  font-size:25px;
+}
+
+nav{
+  position:fixed;
+  top:25%;
+}
+nav a{
+  display:block;
+  padding:10px;
+  font-size:25px;
+}
+
+.facebook{
+  background-color:rgb(0, 0, 165);
+  color:white;
+}
+.twitter{
+  background-color:rgb(0, 204, 255);
+  color:white;
+}
+.google{
+  background-color:rgb(255, 0, 0);
+  color:white;
+}
+.linkedin{
+  background-color:blue;
+  color:white;
+}
+.youtube{
+  background-color:rgb(212, 0, 0);
+  color:white;
+}

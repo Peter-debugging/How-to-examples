@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+    <h1>Click on the image</h1>
+    <div onclick="show()"class="image">
+      <img src="img.jpg"/>
+    </div>
+
+    <div class="modal">
+      <div onclick="hide()" class="close-modal">&times;</div>
+      <div class="modal-image">
+        <img src="img.jpg"/>
+        <div class="caption">
+          Universe
+        </div>
+      </div> 
+      
+    </div>
+    <script>
+      function show(){
+        document.querySelector(".modal").style.display = "block";
+      }
+      function hide(){
+        document.querySelector(".modal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

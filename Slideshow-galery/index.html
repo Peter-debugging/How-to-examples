@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <script src="https://kit.fontawesome.com/f6aab74ee7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="slideshow">
+      <div class="slideshow-content">
+        <div class="number">1 / 4</div>
+        <img src="images/img-1.jpg"/>
+        <div class="caption">Caption one</div>
+      </div>
+
+      <div class="slideshow-content">
+        <div class="number">2 / 4</div>
+        <img src="images/img-2.jpg"/>
+        <div class="caption">Caption two</div>
+      </div>
+
+      <div class="slideshow-content">
+        <div class="number">3 / 4</div>
+        <img src="images/img-3.jpg"/>
+        <div class="caption">Caption three</div>
+      </div>
+
+      <div class="slideshow-content">
+        <div class="number">4 / 4</div>
+        <img src="images/img-4.jpg"/>
+        <div class="caption">Caption four</div>
+      </div>
+      
+      <div class="prev" onclick="plusSlide(-1)"><i class="fas fa-chevron-left"></i></div>
+      <div class="next" onclick="plusSlide(1)" ><i class="fas fa-chevron-right"></i></div>
+
+    </div>
+    <div class="galery-container">
+
+      <span onclick="showSlide(0)" class="galery galery-0 active">      
+        <img src="images/img-1.jpg" height="150px"/>
+      </span>
+
+      <span onclick="showSlide(1)" class="galery">
+        <img src="images/img-2.jpg" height="150px"/>
+      </span>
+
+      <span onclick="showSlide(2)" class="galery">
+        <img src="images/img-3.jpg" height="150px"/>
+      </span>
+
+      <span onclick="showSlide(3)" class="galery">
+        <img src="images/img-4.jpg" height="150px"/>
+      </span>
+    </div>
+
+    <script>
+      var galery = document.getElementsByClassName("galery");
+      var slides = document.getElementsByClassName("slideshow-content");
+      var slideIndex = 0;
+
+      showSlide(slideIndex);
+
+      function plusSlide(add){
+        showSlide(slideIndex + add);
+      }
+
+      function showSlide(n){
+        for(var i = 0; i < slides.length; i++){
+          slides[i].style.display = "none";
+        }
+
+        for(var i = 0; i < galery.length; i++){
+          galery[i].className = galery[i].className.replace(" active", "");
+        }
+        if(n > slides.length - 1){
+          n = 0;
+        }else if(n < 0 ){
+          n = slides.length -1;
+        }
+        slideIndex = n;
+
+        galery[slideIndex].className += " active";
+        slides[slideIndex].style.display = "block";
+      }
+    </script>
+  </body>
+</html>

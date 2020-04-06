@@ -1,0 +1,42 @@
+body{
+  margin:0;
+  font-family:Arial;
+}
+nav{
+  background-color:rgb(43, 43, 43);
+  overflow:hidden;
+}
+a, .dropdown{
+  float:left;
+}
+a, .dropdown button{
+  color:white;
+  background-color:inherit;
+  border:none;
+  outline:none;
+  padding:15px;
+  text-decoration:none;
+  font-family:Arial;
+  font-size:15px;
+}
+.sub-menu{
+  position:absolute;
+  background-color:red;
+  color:white;
+  top:46px;
+  left:0px;
+  width:100%;
+  display:none;
+}
+
+.dropdown:hover{
+  background-color:red;
+}
+.dropdown:hover .sub-menu{
+  display:block;
+}
+
+.sub-menu a:hover{
+  color:black;
+  background-color:white;
+}

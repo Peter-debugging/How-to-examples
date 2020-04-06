@@ -1,0 +1,68 @@
+body{
+  margin:0;
+  font-family:Arial;
+}
+
+nav{
+  overflow:hidden;
+  width:100%;
+  background-color:rgb(58, 58, 58);
+}
+a, .dropdown{
+  float:left;
+}
+
+a, .dropdown button{
+  border:none;
+  background-color:inherit;
+  color:white;
+  font-size:15px;
+  text-decoration:none;
+  padding:15px;
+}
+
+a:hover, .dropdown:hover button{
+  background-color:red;
+}
+
+.dropdown-content{
+  position:absolute;
+  top:46px;
+  left:0px;
+  z-index:1;
+  display:none;
+  width:100%;
+  overflow:hidden;
+  background-color:rgb(202, 202, 202);
+}
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+.dropdown-content header{
+  background-color:red;
+  color:white;
+  padding:15px;
+}
+.dropdown-content main{
+  display:flex;
+}
+.dropdown-content div{
+  width:30%;
+  padding:15px;
+}
+.dropdown-content main a{
+  color:black;
+  display:block;
+  float:none;
+}
+.dropdown-content main a:hover{
+  background-color:rgb(233, 233, 233);
+}
+@media screen and (max-width:400px){
+  .dropdown-content main{
+    display:block;
+  }
+  .dropdown-content div{
+    width:90%;
+  }
+}

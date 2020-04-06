@@ -1,0 +1,42 @@
+html{
+  background-color:white;
+}
+body{
+  background-color:gray;
+  color:rgb(255, 255, 255);
+  font-family:Arial;
+  margin:0;
+  max-width:400px;
+  margin:auto;
+  border:1px solid black;
+  min-height:600px;
+} 
+nav{
+  background-color:rgb(49, 49, 49);
+  height:46px;
+  overflow:hidden;
+}
+nav.wide{
+  height:auto;
+}
+a{
+  display:block;
+  padding:14px;
+  color:white;
+  text-decoration: none;
+}
+a.logo{
+  background-color:#4CAF50;
+}
+a:hover, i:hover{
+  background-color:rgb(218, 218, 218);
+  color:black;
+}
+i{
+  float:right;
+  padding:15px;
+  background-color:black;
+}
+main{
+  padding:15px;
+}

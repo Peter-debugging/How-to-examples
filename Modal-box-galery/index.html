@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <script src="https://kit.fontawesome.com/f6aab74ee7.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="galery">
+
+    <span>
+      <img src="images/img-1.jpg" onclick="openModal(0)"/>
+    </span>
+
+    <span>
+      <img src="images/img-2.jpg" onclick="openModal(1)"/>
+    </span>
+
+    <span>
+      <img src="images/img-3.jpg" onclick="openModal(2)"/>
+    </span>
+
+    <span>
+      <img src="images/img-4.jpg" onclick="openModal(3)"/>
+    </span>
+
+    </div>
+
+    <div class="modal">
+      <div class="close" onclick="closeModal()">&times;</div>
+      <div class="slideshow">
+
+        <div class="image-container">
+          <div class="number">1 / 4</div>
+          <img src="images/img-1.jpg"/>
+          <div class="caption">Hat</div>
+        </div>
+  
+        <div class="image-container">
+          <div class="number">2 / 4</div>
+          <img src="images/img-2.jpg"/>
+          <div class="caption">Beach</div>
+        </div>
+  
+        <div  class="image-container">
+          <div class="number">3 / 4</div>
+          <img src="images/img-3.jpg"/>
+          <div class="caption">Shoes</div>
+        </div>
+  
+        <div  class="image-container">
+          <div class="number">4 / 4</div>
+          <img src="images/img-4.jpg"/>
+          <div class="caption">Office</div>
+        </div>
+        
+        <div class="prev" onclick="plusSlide(-1)"><i class="fas fa-chevron-left"></i></div>
+        <div class="next" onclick="plusSlide(1)"><i class="fas fa-chevron-right"></i></div>
+      </div>
+
+      <div class="modal-galery">
+        <span onclick="show(0)">
+          <img src="images/img-1.jpg"/>
+        </span>
+  
+        <span onclick="show(1)">
+          <img src="images/img-2.jpg"/>
+        </span>
+  
+        <span onclick="show(2)">
+          <img src="images/img-3.jpg"/>
+        </span>
+  
+        <span onclick="show(3)">
+          <img src="images/img-4.jpg"/>
+        </span>
+      </div>      
+
+    </div>
+
+    <script>
+      var selectedIndex = 0;
+      var modal = document.querySelector(".modal");
+      var modalSlideImages = document.querySelectorAll(".image-container");
+      var modalSlideSelectors = document.querySelectorAll(".modal-galery img");
+      show(selectedIndex);
+
+      function show(n){
+        for(var i = 0; i < modalSlideImages.length; i++){
+          modalSlideImages[i].style.display = "none";
+        }
+
+        for(var i = 0; i < modalSlideSelectors.length; i++){
+          modalSlideSelectors[i].className = modalSlideSelectors[i].className.replace(" active", "");
+        }
+
+        if(n < 0){
+          selectedIndex = modalSlideImages.length - 1;
+        }else if(n > modalSlideImages.length -1){
+          selectedIndex = 0;
+        }else{
+          selectedIndex = n;
+        }
+
+        modalSlideSelectors[selectedIndex].className += " active";
+        modalSlideImages[selectedIndex].style.display = "block";
+      }
+
+      function closeModal(){
+        modal.style.display = "none";
+      }
+
+      function openModal(n){
+        modal.style.display = "block";
+        show(n);
+      }
+
+      function plusSlide(n){
+        show(selectedIndex + n);
+      }
+    </script>
+  </body>
+</html>
