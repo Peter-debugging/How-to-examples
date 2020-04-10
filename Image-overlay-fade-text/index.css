@@ -1,0 +1,35 @@
+.container{
+  background-color:rgb(228, 228, 228);
+  width:min-content;
+  position: relative;
+}
+
+.image{
+  width:300px;
+  display:block;
+}
+
+.overlay{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  opacity:0;
+  transition:0.5s ease;
+  background-color:rgba(228, 228, 228);
+  text-align:center;
+}
+
+.container:hover .overlay{
+  opacity:1;  
+}
+
+.text{
+  font-size:20px;
+  text-align:center; 
+  color:black;
+  position:absolute;
+  top:45%;
+  width:100%;
+}

@@ -1,0 +1,31 @@
+.container{
+  width:300px;
+  background-color:rgb(255, 193, 100);
+  position:relative;
+}
+
+.container:hover .overlay{
+  opacity:1;
+}
+
+.image{
+  width:100%;
+}
+
+.overlay{
+  background-color:rgba(0, 0, 0, 0.432);
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+  opacity:0;
+  transition:0.5s;
+  padding:15px;
+}
+
+.text{
+  position:relative;
+  text-align:center;
+  color:white;
+  font-size:15pt;
+}

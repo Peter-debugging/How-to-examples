@@ -1,0 +1,46 @@
+.container{
+  width:300px;
+  background-color:rgb(255, 193, 100);
+  position:relative;
+}
+
+.container:hover .overlay{
+  opacity:1;
+}
+
+.container:hover .icon{
+  display:block;
+}
+
+.image{
+  width:100%;
+}
+
+.overlay{
+  background-color:rgb(255, 0, 0);
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  opacity:0;
+  transition:0.5s;
+  padding:15px;
+}
+
+.icon{
+  position:relative;
+  text-align:center;
+  color:white;
+  font-size:80pt;
+  top:50%;
+  display:none;
+  animation:lift 1s;
+  transform:translate(0,-50%)
+}
+
+
+@keyframes lift{
+  0%{transform:translate(0,0%)}
+  100%{transform:translate(0,-50%)}
+}

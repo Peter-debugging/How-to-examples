@@ -1,0 +1,33 @@
+.container{
+  width:300px;
+  background-color:rgb(255, 193, 100);
+  position:relative;
+}
+
+.container:hover .overlay{
+  transform:scale(1);
+}
+
+.image{
+  width:100%;
+}
+
+.overlay{
+  background-color:rgba(0, 140, 255, 0.247);
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  transform:scale(0);
+  transition:0.2s;
+}
+
+.text{
+  position:relative;
+  text-align:center;
+  top:50%;
+  transform:translate(0,-50%);
+  color:white;
+  font-size:15pt;
+}

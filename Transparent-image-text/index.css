@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,600&display=swap');
+*{
+  font-family: 'Muli', sans-serif;
+}
+
+body{
+  margin:0;
+}
+
+.container{
+  position:relative;
+  width:min-content;
+  width:100%;
+}
+
+.container img{
+  width:100%;
+}
+
+.text{
+  position:absolute;
+  background-color:rgba(0,0,0,0.7);
+  color:white;
+  padding:30px;
+  bottom:0;
+}
