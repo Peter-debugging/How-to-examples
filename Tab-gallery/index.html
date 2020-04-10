@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <img src="images/img-1.jpg" alt="A laptop on the couch">
+      </div>
+
+      <div class="column">
+        <img src="images/img-2.jpg" alt="An elder">
+      </div>
+
+      <div class="column">
+        <img src="images/img-3.jpg" alt="Someone playing piano">
+      </div>
+
+      <div class="column">
+        <img src="images/img-4.jpg" alt="Sky, branches">
+      </div>
+
+    </div>
+
+    <div class="container">
+      <span 
+        class="close-button"
+        onclick = "this.parentElement.style.display = 'none'">
+        &times;
+      </span>
+      <img src="images/img-1.jpg" alt="" id="expanded-image" style="width:100%">
+
+      <div id="image-text"></div>
+    </div>
+
+    <script>
+      const tabImages = document.querySelectorAll(".column img");
+      const expandedImage = document.getElementById("expanded-image");
+      const imageText = document.getElementById("image-text");
+
+      for(var i = 0; i < tabImages.length; i++){
+        tabImages[i].addEventListener("click", function(){
+          expandedImage.parentElement.style.display = "block"
+          imageText.innerHTML = this.alt;
+          expandedImage.src = this.src;
+        });
+      }
+
+    </script>
+  </body>
+</html>

@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
   <body>
-    <h1>Responsive Image Grid</h1>
-    <p>Resize the browser to see the responsive effect</p>
+    <h1>Image Grid</h1>
+    <p>Click on the buttons to change the grid view.</p>
+    <div class="buttons">
+      <button class="button" onclick="gridSize(this, 1)">1</button>
+      <button class="button" onclick="gridSize(this, 2)">2</button>
+      <button class="button" onclick="gridSize(this, 4)">4</button>
+    </div>
+    
     <div class="row">
       <div class="column">
         <img src="images/img-5.jpg"/>
@@ -52,5 +58,34 @@
         <img src="images/img-7.jpg"/>
       </div>
     </div>
+
+    <script>
+      var columns = document.querySelectorAll(".column");
+      var buttons = document.querySelectorAll(".button");
+
+      buttons[1].click();
+
+      function gridSize(element, size){
+        for(var i = 0; i < buttons.length; i++){
+          buttons[i].classList.remove("active");
+        }
+
+        element.classList.add("active");
+
+        for(var i = 0; i < columns.length; i++){
+          switch(size){
+            case 1:
+              columns[i].style.flex = columns[i].style.maxWidth = "100%";
+            break;
+            case 2:
+              columns[i].style.flex = columns[i].style.maxWidth = "50%";
+            break;
+            case 4:
+              columns[i].style.flex = columns[i].style.maxWidth = "25%";
+            break;
+          }          
+        }
+      }
+    </script>
   </body>
 </html>
