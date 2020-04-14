@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+
+    <h1>My Portfolio</h1>
+    <p>Click on the buttons to filter a category</p>
+
+    <nav>
+      <button id="all" class="active">Show all</button>
+      <button id="nature">Nature</button>
+      <button id="cars">Cars</button>
+      <button id="people">People</button>
+    </nav>
+    
+    <main>
+
+      <div class="card nature">
+        <div class="image-container">
+          <img src="images/mountains.jpg"/>
+        </div>
+        <h3>Mountains</h3>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+      
+      <div class="card nature">
+        <div class="image-container">
+          <img src="images/aurora.jpg"/>
+        </div>
+        <h3>Bureau</h3>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+  
+      <div class="card nature">
+        <div class="image-container">
+        <img src="images/forest.jpg"/>
+        </div>
+        <h3>Forest</h3>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+  
+      <div class="card cars">
+        <div class="image-container">
+        <img src="images/lamborghini.jpg"/>
+        </div>
+        <h3>Lamborghini</h3>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+  
+      <div class="card cars">
+        <div class="image-container">
+        <img src="images/mini-cooper.jpg"/>
+        </div>
+        <h3>Mini cooper</h3>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+  
+      <div class="card cars">
+        <div class="image-container">
+        <img src="images/jeep.jpg"/>
+        </div>
+        <h3>Mini cooper</h3>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+  
+      <div class="card people">
+        <div class="image-container">
+        <img src="images/child-girl.jpg">
+        </div>
+        <h3>Child</h3>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+  
+      <div class="card people">
+        <div class="image-container">
+        <img src="images/woman.jpg"/>
+        </div>
+        <h3>Woman</h3>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+  
+      <div class="card people">
+        <div class="image-container">
+        <img src="images/man.jpg"/>
+        </div>
+        <h3>Man</h3>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+
+    </main> 
+    <script>
+      const buttons = document.querySelectorAll("button");
+      const cards = document.querySelectorAll(".card");      
+
+      for(var i = 0; i < buttons.length;  i++){
+        buttons[i].onclick = function(){
+
+          for(let c = 0; c < buttons.length; c++){
+            buttons[c].classList.remove("active");
+          }
+          
+          for(let c = 0; c < cards.length; c++){           
+
+            if(cards[c].classList.contains(this.id) || this.id == "all"){
+              cards[c].classList.add("visible");
+            }else{
+              cards[c].classList.remove("visible");
+            }
+          }
+
+          this.classList.add("active");
+        };
+
+        buttons[0].click();
+      }
+    </script>
+  </body>
+</html>

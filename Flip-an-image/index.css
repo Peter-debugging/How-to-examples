@@ -1,0 +1,7 @@
+img{
+  width:500px;
+}
+
+img:hover{
+  transform:scaleX(-1);
+}

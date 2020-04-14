@@ -1,0 +1,51 @@
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  padding:15px;
+  background-color:rgb(235, 235, 235);
+}
+
+h1, h2, h3{
+  font-family:Tahoma, sans-serif;
+ font-weight:normal;
+}
+
+button{
+  background-color:white;
+  border:none;
+  padding:15px;
+  cursor:pointer;
+  outline:none;
+}
+
+button:hover{
+  background-color:rgb(190, 190, 190);
+}
+
+button.active, button.active:hover{
+  background-color:gray;
+  color:white;
+}
+
+
+.card{
+  float: left;
+  margin:10px;
+  background-color:white;
+  width:30%;
+  overflow:hidden;
+  padding:10px;
+  display:none;
+}
+
+.card.visible{
+  display:block;
+}
+
+.image-container{
+  overflow:hidden;
+}
+
+.image-container img{
+  width:100%;
+}

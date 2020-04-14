@@ -1,0 +1,21 @@
+body{display:flex;}
+
+aside{
+  width:30%;
+}
+
+main{
+  width:60%;
+}
+.image-container{
+  position:sticky;
+  top:0px;
+  margin:auto;
+  overflow:hidden;
+  width:80%;
+  margin-top:100px;
+}
+
+.image-container img{
+  width:100%;
+}
