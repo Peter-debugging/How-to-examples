@@ -1,0 +1,20 @@
+#container{
+  border:1px solid gray;
+  width:min-content;
+  margin:auto;
+  position:relative;
+  top:30px;
+  cursor:none;
+}
+
+#image{
+  width:700px;
+}
+
+.glass{
+  position:absolute;
+  width:100px;
+  height:100px;
+  border:2px solid black;
+  border-radius:50%;
+}
